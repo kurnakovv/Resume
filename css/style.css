@@ -374,6 +374,7 @@ address {
 }
 
 .burger-btn rect {
+  fill: #ababab;
   -webkit-transition: all var(--burgerMenuAnimateTimeout) ease;
   -o-transition: all var(--burgerMenuAnimateTimeout) ease;
   transition: all var(--burgerMenuAnimateTimeout) ease;
