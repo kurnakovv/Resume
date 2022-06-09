@@ -32,6 +32,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+	scroll-behavior: smooth;
 }
 
 input::-ms-clear {
@@ -769,6 +770,7 @@ body button {
 }
 
 .education-card {
+	text-align: center;
   width: 50%;
   border-radius: 8px;
 }
