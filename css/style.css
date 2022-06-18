@@ -805,6 +805,9 @@ body button {
 	align-items: center;
 	padding: 22px 10px 35px 10px;
 }
+.education-card__body >*:not(:last-child) {
+	margin-bottom: 10px;
+}
 
 .education-card__name {
 	font-weight: 700;
@@ -978,6 +981,10 @@ body button {
 @media (max-width: 1300px) {
 	.projects__items {
 		grid-template: 'project project' 1fr/1fr 1fr;
+	}
+	
+	.education-card__name {
+		font-size: 2.3rem;
 	}
 }
 
