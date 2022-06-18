@@ -805,7 +805,8 @@ body button {
 	align-items: center;
 	padding: 22px 10px 35px 10px;
 }
-.education-card__body >*:not(:last-child) {
+
+.education-card__body>*:not(:last-child) {
 	margin-bottom: 10px;
 }
 
@@ -984,9 +985,9 @@ body button {
 	.projects__items {
 		grid-template: 'project project' 1fr/1fr 1fr;
 	}
-	
+
 	.education-card__name {
-		font-size: 2.3rem;
+		font-size: 2rem;
 	}
 }
 
@@ -1133,6 +1134,14 @@ body button {
 	.navmenu {
 		width: 100vw;
 		border-bottom-right-radius: 8px;
+	}
+
+	.education-card__name {
+		font-size: 1.2rem;
+	}
+
+	.education-card__post {
+		font-size: 1.2rem;
 	}
 }
 
