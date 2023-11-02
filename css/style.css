@@ -341,7 +341,7 @@ address {
 }
 
 ._bg-second {
-  background: #9654d8;
+  background: #7700ff;
 }
 
 ._black {
@@ -577,7 +577,7 @@ body button {
   padding: 10px 34px 10px 22px;
   border-radius: 8px;
   color: var(--text-c);
-  border: 2px solid #9654d8;
+  border: 2px solid #7700ff;
   -webkit-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -589,7 +589,7 @@ body button {
 
 .download-pdf:hover,
 .download-pdf:focus {
-  color: #9654d8;
+  color: #7700ff;
   background: #fff;
 }
 
@@ -812,7 +812,7 @@ body button {
 }
 
 .education-card.purple {
-  background: #7b3dba;
+  background: #3d0082;
 }
 
 .education-card.black {
@@ -876,7 +876,7 @@ body button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #7b3dba;
+  background: #3d0082;
   border-radius: 8px;
   padding: 15px;
   font-size: 3.2rem;
