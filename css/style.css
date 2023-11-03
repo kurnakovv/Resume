@@ -1088,7 +1088,7 @@ body button {
     width: 100%;
     overflow: scroll;
     scrollbar-width: thin;
-    scrollbar-color: #000;
+    scrollbar-color: #0f0f0f;
   }
 
   .projects__items > *:not(:last-child) {
