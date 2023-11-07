@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- maximum-scale=1.0, user-scalable=0 does not allow content to be scaled on Android. -->
+    <!-- Disables forced link for phone number on iOS -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta name="description" content="description" />
+    <meta name="theme-color" content="#000000" />
+    <link type="image/png" rel="icon" href="./favicon-120x120.png" />
+    <link rel="mask-icon" href="./favicon-120x120.png" color="#000000" />
+    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+
+    <link
+      rel="preload"
+      href="fonts/Golos-UI_VariableFont_wght.woff2"
+      as="font"
+      crossorigin
+    />
+
+    <!-- SEO
+    <meta name="keywords" content="keyword1,">
+    <meta name="robots" content="none,noindex,nofollow,noimageindex,noarchive,nosnippet">
+    <meta name="Author" content="Author">
+    <meta name="Copyright" content="Copyright">
+    <meta name="Address" content="Address"> 
+    <! - Redirect (reload) the page. Delay in seconds; url=Site / page address ->
+    <meta http-equiv="refresh" content="seconds; url = URL">
+
+    Facebook
+    <! - site localization, for the Russian-language site ru_RU ->
+    <meta property="og:locale" content="ru_RU">
+    <! - content type, default is article ->
+    <meta property="og:type" content="article">
+    <! - the title of the page that will be displayed in the post of the social network ->
+    <meta property="og:title" content="META tags">
+    <! - page description ->
+    <meta property="og:description" content="Description of the page about META tags">
+    <! - link to the image that will be published in the post ->
+    <meta property="og:image" content="path">
+    <! - link to the current page ->
+    <meta property="og: url" content="path">
+    <! - site name ->
+    <meta property="og:site_name" content="Freelancer for life">
+
+    Twitter
+    <! - Map type, default is summary ->
+    <meta name="twitter: card" content="summary">
+    <! - Author name / login ->
+    <meta name="twitter: site" content="Ivan">
+    <! - Page title ->
+    <meta name="twitter: title" content="META tags">
+    <! - Page description ->
+    <meta name="twitter: description" content="about META tags">
+    <! - Link to image ->
+    <meta name="twitter: image" content="path">
+  -->
+
+    <title>Kurnakov Maksim</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="menu-wrapper">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="burger-btn" for="menu__toggle">
+        <svg
+          width="40"
+          height="34"
+          viewBox="0 0 50 44"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="burger-btn__rect-top"
+            width="40"
+            height="7"
+            rx="2"
+            fill="#D9D9D9"
+          />
+          <rect
+            class="burger-btn__rect-center"
+            y="13"
+            width="40"
+            height="7"
+            rx="2"
+            fill="#D9D9D9"
+          />
+          <rect
+            class="burger-btn__rect-bottom"
+            y="27"
+            width="40"
+            height="7"
+            rx="2"
+            fill="#D9D9D9"
+          />
+        </svg>
+      </label>
+
+      <nav class="navmenu">
+        <div class="navmenu__body">
+          <ul>
+            <li class="fs-element _title">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="fs-element _title">
+              <a href="#experience">Work experience</a>
+            </li>
+            <li class="fs-element _title">
+              <a href="#education">Education</a>
+            </li>
+            <li class="fs-element _title">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="fs-element _title">
+              <a href="#langs">Langs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <main class="main">
+      <div class="main__body">
+        <section class="hero">
+          <div class="hero__body container">
+            <div class="hero__main-content">
+              <h1 tabindex="0" class="hero__title _title">
+                Maksim Kurnakov, <br />.NET Backend web-developer
+              </h1>
+              <p class="hero__text">
+                Full employment, remotely <br />
+                2 march 2003, middle developer. Russia, Blagoveshchensk (Free
+                schedule)
+              </p>
+              <div class="hero__photo _contain-img" style="height: auto">
+                <!-- <picture><source srcset="img/photo.avif" type="image/avif"><source srcset="img/photo.webp" type="image/webp"><img src="img/MaksimKurnakovMini.jpg" alt='Kurnakov Maksim'></picture> -->
+                <img src="img/MaksimKurnakovMini.jpg" alt="Kurnakov Maksim" />
+              </div>
+            </div>
+            <div class="hero__buttons">
+              <a
+                href="https://download-file-resume.herokuapp.com/api/File"
+                class="hero__download-pdf download-pdf _bg-second _"
+                type="button"
+              >
+                <img
+                  src="img/pdf.svg"
+                  width="46"
+                  height="48"
+                  alt="download PDF"
+                />
+                <span>Download pdf</span>
+              </a>
+            </div>
+            <div class="hero__contacts">
+              <div class="hero__contact contact contact_no-select">
+                <span class="contact__name">Email</span>
+                <span class="contact__data">maksk210@gmail.com</span>
+              </div>
+              <div class="hero__contact contact contact_no-select">
+                <span class="contact__name">Skype</span>
+                <span class="contact__data">live:.cid.b34cf18ba316f537</span>
+              </div>
+              <!-- <a href="tel:+88005553535" class="hero__contact contact">
+							<span class="contact__name">Tel</span>
+							<span class="contact__data">88005553535</span>
+						</a> -->
+              <a href="https://t.me/kurnakovv" class="hero__contact contact">
+                <span class="contact__name">Telegram</span>
+                <span class="contact__data">@kurnakovv</span>
+              </a>
+              <a
+                href="https://github.com/kurnakovv"
+                class="hero__contact contact"
+              >
+                <span class="contact__name">GitHub</span>
+                <span class="contact__data">https://github.com/kurnakovv </span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="skills" class="skills _bg-second_grad _block-padding">
+          <div class="skills__body _body-column-center container">
+            <div class="title-block">
+              <div class="title-block__image _contain-img">
+                <img
+                  src="img/icons/PC.svg"
+                  loading="lazy"
+                  alt="PC"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <h2 class="title-block__name _title">Skills</h2>
+            </div>
+            <div class="skills__skills-block skills-block">
+              <h3 class="skills-block__title _title _gray">Back-end</h3>
+              <div class="skills-block__skill-rows">
+                <div class="skill _title-font _black">C#</div>
+                <div class="skill _title-font _black">.NET</div>
+                <div class="skill _title-font _black">.NET Framework</div>
+                <div class="skill _title-font _black">.NET Core</div>
+                <div class="skill _title-font _black">xUnit</div>
+                <div class="skill _title-font _black">MSTest</div>
+                <div class="skill _title-font _black">SQL</div>
+                <div class="skill _title-font _black">T-SQL</div>
+                <div class="skill _title-font _black">Postgres SQL</div>
+                <div class="skill _title-font _black">Microsoft SQL Server</div>
+                <div class="skill _title-font _black">Web API</div>
+                <div class="skill _title-font _black">gRPC</div>
+                <div class="skill _title-font _black">Asp net</div>
+                <div class="skill _title-font _black">Asp net Core</div>
+                <div class="skill _title-font _black">Swagger</div>
+                <div class="skill _title-font _black">Microservices</div>
+                <div class="skill _title-font _black">Docker</div>
+                <div class="skill _title-font _black">TEST</div>
+              </div>
+            </div>
+            <div class="skills__skills-block skills-block">
+              <h3 class="skills-block__title _title _gray">Front-end</h3>
+              <div class="skills-block__skill-rows">
+                <div class="skill _title-font _black">Html</div>
+                <div class="skill _title-font _black">Css</div>
+                <div class="skill _title-font _black">JavaScript (JS)</div>
+                <div class="skill _title-font _black">TypeScript (TS)</div>
+                <div class="skill _title-font _black">React</div>
+                <div class="skill _title-font _black">Blazor</div>
+              </div>
+            </div>
+            <div class="skills__skills-block skills-block">
+              <h3 class="skills-block__title _title _gray">Shared</h3>
+              <div class="skills-block__skill-rows">
+                <div class="skill _title-font _black">Git</div>
+                <div class="skill _title-font _black">TDD</div>
+                <div class="skill _title-font _black">SOLID</div>
+                <div class="skill _title-font _black">OOP knowledge</div>
+                <div class="skill _title-font _black">Patterns (GoF)</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="experience" class="experience">
+          <div
+            class="experience__body _body-column-center container _block-padding _bg-first"
+          >
+            <div class="title-block">
+              <div class="title-block__image _contain-img">
+                <img
+                  src="img/icons/work.svg"
+                  loading="lazy"
+                  alt="briefcase"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <h2 class="title-block__name _title">Work experience</h2>
+            </div>
+            <div class="work-card work-card_first-item">
+              <div class="work-card__body">
+                <div class="work-card__header">
+                  <div class="work-card__top-left-container _title-font">
+                    <span class="work-card__company-name"
+                      >Tiburon research</span
+                    >
+                    <div class="work-card__date-work">
+                      <span class="work-card__date-work_start">July 2021</span>
+                      <span class="work-card__date-work_end">...</span>
+                    </div>
+                  </div>
+                  <span class="work-card__post _title-font"
+                    >Junior developer</span
+                  >
+                </div>
+                <div class="work-card__main">
+                  <p class="work-card__text">
+                    The company is developing a second version of the product. I
+                    am supporting 2 projects: SPA UI and Business logic/API for
+                    working with data <br />Responsibilities: Interface
+                    development, adding new functionality, supporting legacy
+                    functionality, writing high-load database queries.
+                  </p>
+                </div>
+              </div>
+              <div class="work-card__decor-block _bg-second"></div>
+            </div>
+            <!-- <div class="work-card work-card_second-item">
+						<div class="work-card__body">
+							<div class="work-card__header">
+								<div class="work-card__top-left-container _title-font">
+									<span class="work-card__company-name">Company Name</span>
+									<div class="work-card__date-work">
+										<span class="work-card__date-work_start">01.01.2022</span>
+										<span class="work-card__date-work_end">01.01.2033</span>
+									</div>
+								</div>
+								<span class="work-card__post _title-font">Shisher</span>
+							</div>
+							<div class="work-card__main">
+								<p class="work-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Aliquam nunc non id dictumst curabitur. Ullamcorper massa nam tristiqueplatea risus,
+									ac congue. Nibh tempus arcu, sapien, vitae, at tristique. Vivamus tristique
+									scelerisque ullamcorper neque.</p>
+							</div>
+						</div>
+						<div class="work-card__decor-block _bg-second"></div>
+					</div> -->
+          </div>
+        </section>
+        <section id="education" class="education _bg-second">
+          <div
+            class="education__body container _body-column-center _block-padding"
+          >
+            <div class="title-block">
+              <div class="title-block__image _contain-img">
+                <img
+                  src="img/icons/education.svg"
+                  loading="lazy"
+                  alt="hat"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <h2 class="title-block__name _title">Education</h2>
+            </div>
+            <div class="education-card white">
+              <div class="education-card__body">
+                <span class="education-card__name _title-font"
+                  >Moscow University for Industry and Finance “Synergy”</span
+                >
+                <span class="education-card__stud-date"
+                  >Secondary education, Extramural</span
+                >
+                <span class="education-card__stud-date">2019 – present</span>
+                <span class="education-card__post"
+                  >Informatics and computer engineering</span
+                >
+              </div>
+            </div>
+            <!-- <div class="education-card purple">
+						<div class="education-card__body">
+							<span class="education-card__name _title-font">Name of</span>
+							<span class="education-card__stud-date">01.01.2022 - 01.01.2033</span>
+							<span class="education-card__post">Shisher</span>
+						</div>
+					</div>
+					<div class="education-card black">
+						<div class="education-card__body">
+							<span class="education-card__name _title-font">Name of</span>
+							<span class="education-card__stud-date">01.01.2022 - 01.01.2033</span>
+							<span class="education-card__post">Shisher</span>
+						</div>
+					</div> -->
+          </div>
+        </section>
+        <section id="projects" class="projects _bg-first">
+          <div
+            class="projects__body container _body-column-center _block-padding"
+          >
+            <div class="title-block">
+              <div class="title-block__image _contain-img">
+                <img
+                  src="img/icons/folder.svg"
+                  loading="lazy"
+                  alt="folder"
+                  width="60"
+                  height="60"
+                />
+              </div>
+              <h2 class="title-block__name _title">My pet projects</h2>
+            </div>
+            <div class="projects__items">
+              <div class="project">
+                <div class="project__body _black">
+                  <header class="project__header">
+                    <a href="https://github.com/KurnakovMaksim/jiraF"
+                      ><div class="project__preview _contain-img">
+                        <img
+                          src="img/jiraF-icon.png"
+                          loading="lazy"
+                          alt="jiraF"
+                          width="100"
+                          height="100"
+                        /></div
+                    ></a>
+                    <span class="project__name _title-font _bold _gray"
+                      >JiraF</span
+                    >
+                  </header>
+                  <div class="project__main">
+                    <p class="project__about _black">
+                      jiraF - is a task manager e-commerce application based on
+                      microservices approach.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project__body _black">
+                  <header class="project__header">
+                    <a href="https://github.com/KurnakovMaksim/EnumConverter"
+                      ><div class="project__preview _contain-img">
+                        <img
+                          src="img/enumconverter-icon.png"
+                          loading="lazy"
+                          alt="EnumConverter"
+                          width="100"
+                          height="100"
+                        /></div
+                    ></a>
+                    <span class="project__name _title-font _bold _gray"
+                      >Enum Converter</span
+                    >
+                  </header>
+                  <div class="project__main">
+                    <p class="project__about _black">
+                      EnumConverter is a little open source library for convert
+                      enum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project__body _black">
+                  <header class="project__header">
+                    <a
+                      href="https://github.com/KurnakovMaksim/ExceptionExtensions"
+                      ><div class="project__preview _contain-img">
+                        <img
+                          src="img/exceptionextensions-icon.png"
+                          loading="lazy"
+                          alt="ExceptionExtensions"
+                          width="100"
+                          height="100"
+                        /></div
+                    ></a>
+                    <span class="project__name _title-font _bold _gray"
+                      >Exception Extensions</span
+                    >
+                  </header>
+                  <div class="project__main">
+                    <p class="project__about _black">
+                      ExceptionExtensions is open source library with useful
+                      methods for working with exceptions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project__body _black">
+                  <header class="project__header">
+                    <a
+                      href="https://github.com/KurnakovMaksim/NotSocialNetwork_Blazor"
+                      ><div class="project__preview _contain-img">
+                        <img
+                          src="img/NotSocialNetwork-icon.png"
+                          loading="lazy"
+                          alt="NotSocialNetwork"
+                          width="100"
+                          height="100"
+                        /></div
+                    ></a>
+                    <span class="project__name _title-font _bold _gray"
+                      >Not Social Network</span
+                    >
+                  </header>
+                  <div class="project__main">
+                    <p class="project__about _black">
+                      NotSocialNetwork - This is the place where people can
+                      publish their interesting posts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project__body _black">
+                  <header class="project__header">
+                    <a
+                      href="https://github.com/KurnakovMaksim/DeviceStore-AspNetMvc-"
+                      ><div class="project__preview _contain-img">
+                        <img
+                          src="https://raw.githubusercontent.com/KurnakovMaksim/DeviceStore-AspNetMvc-/master/DeviceStore.WebUI/favicon.ico"
+                          loading="lazy"
+                          alt="DeviceStore"
+                          width="100"
+                          height="100"
+                        /></div
+                    ></a>
+                    <span class="project__name _title-font _bold _gray"
+                      >Device Store</span
+                    >
+                  </header>
+                  <div class="project__main">
+                    <p class="project__about _black">
+                      DeviceStore is an online store for selling various
+                      devices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="project">
+							<div class="project__body _black">
+								<header class="project__header">
+									<div class="project__preview _contain-img">
+										<img src="img/icons/folder.svg" loading='lazy' alt='projectName' width=100
+											height=100>
+									</div>
+									<span class="project__name _title-font _bold _gray">ProjectX</span>
+								</header>
+								<div class="project__main">
+									<p class="project__about _black">Lorem ipsum dolor sit amet, consectetur adipiscing
+										elit.</p>
+								</div>
+							</div>
+						</div>
+						<div class="project">
+							<div class="project__body _black">
+								<header class="project__header">
+									<div class="project__preview _contain-img">
+										<img src="img/icons/folder.svg" loading='lazy' alt='projectName' width=100
+											height=100>
+									</div>
+									<span class="project__name _title-font _bold _gray">ProjectX</span>
+								</header>
+								<div class="project__main">
+									<p class="project__about _black">Lorem ipsum dolor sit amet, consectetur adipiscing
+										elit.</p>
+								</div>
+							</div>
+						</div> -->
+            </div>
+            <div class="projects__swipe-note">
+              Swipe to see more
+              <img
+                src="img/icons/swipe.svg"
+                loading="lazy"
+                width="25"
+                height="25"
+                alt="swipe icon"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="langs" class="langs _bg-second">
+          <div class="langs__body container _body-column-center _block-padding">
+            <div class="title-block">
+              <div class="title-block__image _contain-img">
+                <img
+                  src="img/icons/book.svg"
+                  loading="lazy"
+                  alt="book"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <h2 class="title-block__name _title">Languages</h2>
+            </div>
+            <div class="langs__lang lang">
+              <span class="lang__name _title-font _bold">Russian</span>
+              <div class="separator"></div>
+              <span class="lang__state _title-font _bold">Native</span>
+            </div>
+            <div class="langs__lang lang">
+              <span class="lang__name _title-font _bold">English</span>
+              <div class="separator"></div>
+              <span class="lang__state _title-font _bold">A2</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+
+  <script type="module" src="scripts/generalScript.js"></script>
+  <script type="module" src="scripts/animateByScrollConn.js"></script>
+</html>
+
+<!-- 
+  Made in Russia, with ❤, by Ivan Ulyanov. 
+-->
