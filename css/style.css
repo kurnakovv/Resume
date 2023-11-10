@@ -790,6 +790,9 @@ body button {
 .work-card__text {
   line-height: 1.3;
 }
+.work-card__h2 {
+  color: #7700ff;
+}
 
 .work-card__decor-block {
   position: absolute;
