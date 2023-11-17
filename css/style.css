@@ -793,7 +793,7 @@ body button {
 
 .work-card__category {
   color: #fff;
-
+  margin-top: 10px;
   font-weight: bold;
 }
 
