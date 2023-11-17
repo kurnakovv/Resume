@@ -793,6 +793,8 @@ body button {
 
 .work-card__category {
   color: #fff;
+
+  font-weight: bold;
 }
 
 .work-card__decor-block {
