@@ -1192,3 +1192,7 @@ body button {
     width: 90%;
   }
 }
+.work-card_list {
+  list-style: disc;
+  margin-left: 20px;
+}
