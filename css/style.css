@@ -773,6 +773,10 @@ body button {
   font-weight: 500;
   font-size: 1.6rem;
 }
+.work-card__team-name {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
 
 .work-card__date-work {
   font-size: 1.6rem;
