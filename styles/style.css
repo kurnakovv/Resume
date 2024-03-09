@@ -92,6 +92,10 @@
     rotate: -45deg;
   }
 
+  main {
+    background: var(--bg);
+  }
+
   @media (max-width: 426px) {
     nav {
       width: 100vw;
@@ -206,10 +210,6 @@ body {
 body button {
   color: var(--text-c);
   font-size: calc((100vw - 20rem) / (72 - 20) * (1 - 0.8) + 0.8rem);
-}
-
-.main {
-  background: var(--bg);
 }
 
 .hero {
