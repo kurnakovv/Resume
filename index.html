@@ -89,57 +89,55 @@
   </nav>
 
   <main>
-    <section class="hero">
-      <div class="hero__body container">
-        <div class="hero__main-content">
-          <h1 tabindex="0"
-              class="hero__title _title">
-            Maksim Kurnakov, <br />.NET Backend web-developer
-          </h1>
-          <p class="hero__text">
-            Full employment, remotely <br />
-            2 march 2003, middle developer. Russia, Blagoveshchensk (Free
-            schedule)
-          </p>
-          <div class="hero__photo _contain-img"
-               style="height: auto">
-            <img src="images/MaksimKurnakovMini.jpg"
-                 alt="Kurnakov Maksim" />
-          </div>
-        </div>
-        <div class="hero__buttons">
-          <a href="https://download-file-resume.herokuapp.com/api/File"
-             class="hero__download-pdf download-pdf _bg-second _"
-             type="button">
-            <img src="images/pdf.svg"
-                 width="46"
-                 height="48"
-                 alt="download PDF" />
-            <span>Download pdf</span>
-          </a>
-        </div>
-        <div class="hero__contacts">
-          <div class="hero__contact contact contact_no-select">
-            <span class="contact__name">Email</span>
-            <span class="contact__data">maksk210@gmail.com</span>
-          </div>
-          <div class="hero__contact contact contact_no-select">
-            <span class="contact__name">Skype</span>
-            <span class="contact__data">live:.cid.b34cf18ba316f537</span>
-          </div>
-          <a href="https://t.me/kurnakovv"
-             class="hero__contact contact">
-            <span class="contact__name">Telegram</span>
-            <span class="contact__data">@kurnakovv</span>
-          </a>
-          <a href="https://github.com/kurnakovv"
-             class="hero__contact contact">
-            <img src='./images/icons/github-mark-white.svg'
-                 alt=''>
-          </a>
-        </div>
-      </div>
+    <section>
+      <hero-main>
+        <h1>
+          Maksim Kurnakov, <br />.NET Backend web-developer
+        </h1>
+        <p>
+          Full employment, remotely <br />
+          2 march 2003, middle developer. Russia, Blagoveshchensk (Free
+          schedule)
+        </p>
+        <img src="images/MaksimKurnakovMini.jpg"
+             alt="Kurnakov Maksim" />
+      </hero-main>
+
+      <a id='download-pdf'
+         href="https://download-file-resume.herokuapp.com/api/File"
+         type="button">
+        <img src="images/pdf.svg"
+             width="46"
+             height="48"
+             alt="PDF icon" />
+        <span>Download pdf</span>
+      </a>
+
+      <hero-contacts>
+        <contact-block>
+          <b>Email</b>
+          <span>maksk210@gmail.com</span>
+        </contact-block>
+
+        <contact-block>
+          <b>Skype</b>
+          <span>live:.cid.b34cf18ba316f537</span>
+        </contact-block>
+
+        <a href="https://t.me/kurnakovv"
+           title='Me on telegram'>
+          <img src='./images/icons/telegram.svg'
+               alt='telegram icon'>
+        </a>
+
+        <a href="https://github.com/kurnakovv"
+           title='Me on gitHub'>
+          <img src='./images/icons/github-mark-white.svg'
+               alt='github icon'>
+        </a>
+      </hero-contacts>
     </section>
+
     <section id="skills"
              class="skills _bg-second_grad _block-padding">
       <div class="skills__body _body-column-center container">

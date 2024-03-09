@@ -76,7 +76,7 @@ thirdLevel;
   a,
   button {
     cursor: pointer;
-    display: inline-block
+    display: inline-block;
   }
 
   a,
@@ -128,12 +128,9 @@ thirdLevel;
   }
 
   body {
-    font-family: var(--golos);
-    font-size: clamp(12px,
-        calc(16 * 100vw / 1440),
-        16px);
-    color: var(--main-text-color);
-    background: var(--background)
+    height: 100%;
+    color: var(--text-c);
+    font: calc((100vw - 20rem) / (72 - 20) * (1 - 0.8) + 0.8rem) var(--main-font-family);
   }
 
   table-wrapper {
@@ -261,7 +258,15 @@ thirdLevel;
 
   button[type='submit'] {}
 
-  h1 {}
+  h1 {
+    font-size: 2.4rem;
+
+    font-family: "AlumniSans";
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 36px;
+  }
 
   h2 {}
 
@@ -290,5 +295,9 @@ thirdLevel;
   inline-container {
     container-type: inline-size;
     display: block
+  }
+
+  b {
+    font-weight: 500;
   }
 }
