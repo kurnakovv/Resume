@@ -1,105 +1,7 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-::active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  scroll-behavior: smooth;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-input:focus-visible {
-  outline: none;
-}
-
-button {
-  cursor: pointer;
-  background: none;
-}
-
-::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-a:hover,
-a:visited {
-  text-decoration: none;
-}
-
-a:active,
-a:focus {
-  outline: none;
-}
-
-ul,
-li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-address {
-  font-style: normal;
-}
-
 :root {
   --text-c: #fff;
-  --main-font-family: Golos;
+  --main-font-family: 'Golos';
+  --alumniSans-font-family: 'AlumniSans';
   --bg: #3c3c3c;
   --burgerMenuAnimateTimeout: 200ms;
 }
@@ -107,162 +9,16 @@ address {
 @font-face {
   font-family: "AlumniSans";
   font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AlumniSans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AlumniSans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AlumniSans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AlumniSans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AlumniSans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AlumniSans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AlumniSans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AlumniSans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 900;
+  src: url("../fonts/AlumniSans-VariableFont_wght.woff2") format("woff2-variations");
+  font-weight: 100 1000;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Golos";
   font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Golos";
-  font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Golos";
-  font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Golos";
-  font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Golos";
-  font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Golos";
-  font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Golos";
-  font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Golos";
-  font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Golos";
-  font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2")
-    format("woff2-variations");
-  font-weight: 900;
+  src: url("../fonts/Golos-UI_VariableFont_wght.woff2") format("woff2-variations");
+  font-weight: 100 1000;
   font-style: normal;
 }
 
@@ -329,13 +85,11 @@ address {
 }
 
 ._bg-second_grad {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#8c31f5),
-    to(#7700ff)
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(#8c31f5),
+      to(#7700ff));
   background: -o-linear-gradient(top, #8c31f5, #7700ff);
   background: linear-gradient(180deg, #8c31f5, #7700ff);
 }
@@ -472,8 +226,7 @@ address {
 body {
   height: 100%;
   color: var(--text-c);
-  font: calc((100vw - 20rem) / (72 - 20) * (1 - 0.8) + 0.8rem)
-    var(--main-font-family);
+  font: calc((100vw - 20rem) / (72 - 20) * (1 - 0.8) + 0.8rem) var(--main-font-family);
 }
 
 body button {
@@ -487,12 +240,10 @@ body button {
 
 .hero {
   --photoMobHeight: 250px;
-  background: -o-radial-gradient(
-    #474747,
-    #474747,
-    rgba(63, 62, 62, 0.2),
-    #3c3c3c
-  );
+  background: -o-radial-gradient(#474747,
+      #474747,
+      rgba(63, 62, 62, 0.2),
+      #3c3c3c);
   background: radial-gradient(#474747, #474747, rgba(63, 62, 62, 0.2), #3c3c3c);
   padding-bottom: 75px;
   padding-top: 200px;
