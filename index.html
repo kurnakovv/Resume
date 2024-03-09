@@ -31,62 +31,57 @@
   <link rel="stylesheet"
         href="./styles/normalize.css" />
   <link rel="stylesheet"
+        href="./styles/fonts.css" />
+  <link rel="stylesheet"
         href="./styles/style.css" />
 </head>
 
-<body>
-  <div class="menu-wrapper">
-    <input id="menu__toggle"
-           type="checkbox" />
-    <label class="burger-btn"
-           for="menu__toggle">
-      <svg width="40"
-           height="34"
-           viewBox="0 0 50 44"
-           fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <rect class="burger-btn__rect-top"
-              width="40"
-              height="7"
-              rx="2"
-              fill="#D9D9D9" />
-        <rect class="burger-btn__rect-center"
-              y="13"
-              width="40"
-              height="7"
-              rx="2"
-              fill="#D9D9D9" />
-        <rect class="burger-btn__rect-bottom"
-              y="27"
-              width="40"
-              height="7"
-              rx="2"
-              fill="#D9D9D9" />
-      </svg>
-    </label>
+<body id='index'>
+  <input id="menu-toggler"
+         type="checkbox" />
 
-    <nav class="navmenu">
-      <div class="navmenu__body">
-        <ul>
-          <li class="fs-element _title">
-            <a href="#skills">Skills</a>
-          </li>
-          <li class="fs-element _title">
-            <a href="#experience">Work experience</a>
-          </li>
-          <li class="fs-element _title">
-            <a href="#education">Education</a>
-          </li>
-          <li class="fs-element _title">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="fs-element _title">
-            <a href="#langs">Langs</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  <label for="menu-toggler">
+    <svg width="40"
+         height="34"
+         viewBox="0 0 50 44"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+      <rect width="40"
+            height="7"
+            rx="2"
+            fill="#D9D9D9" />
+      <rect y="13"
+            width="40"
+            height="7"
+            rx="2"
+            fill="#D9D9D9" />
+      <rect y="27"
+            width="40"
+            height="7"
+            rx="2"
+            fill="#D9D9D9" />
+    </svg>
+  </label>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#experience">Work experience</a>
+      </li>
+      <li>
+        <a href="#education">Education</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#langs">Langs</a>
+      </li>
+    </ul>
+  </nav>
 
   <main class="main">
     <div class="main__body">
@@ -135,8 +130,8 @@
             </a>
             <a href="https://github.com/kurnakovv"
                class="hero__contact contact">
-              <span class="contact__name">GitHub</span>
-              <span class="contact__data">https://github.com/kurnakovv </span>
+              <img src='./images/icons/github-mark-white.svg'
+                   alt=''>
             </a>
           </div>
         </div>

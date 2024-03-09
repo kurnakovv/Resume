@@ -6,21 +6,99 @@
   --burgerMenuAnimateTimeout: 200ms;
 }
 
-@font-face {
-  font-family: "AlumniSans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-VariableFont_wght.woff2") format("woff2-variations");
-  font-weight: 100 1000;
-  font-style: normal;
+#index {
+  nav {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    background: #874cc3;
+    width: 320px;
+    border-bottom-left-radius: 5px;
+    translate: 100% 0 0;
+    transition: all var(--burgerMenuAnimateTimeout) ease;
+    padding: 60px 30px 20px 30px;
+  }
+
+  nav ul {
+    display: grid;
+    justify-items: end;
+    overflow: auto;
+  }
+
+  nav a {
+    text-align: right;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: .3em;
+    padding: 5px 0;
+    word-break: break-word;
+    transition: all ease .2s;
+    font-family: "AlumniSans";
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 36px;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    letter-spacing: 5px;
+  }
+
+  #menu-toggler {
+    display: none;
+  }
+
+  label[for="menu-toggler"] {
+    position: fixed;
+    right: 20px;
+    top: 5%;
+    z-index: 20;
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+
+  label[for="menu-toggler"] rect {
+    fill: #ababab;
+    transition: all var(--burgerMenuAnimateTimeout) ease;
+    border-radius: 15px;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    transform-box: fill-box;
+  }
+
+  label[for="menu-toggler"]:hover,
+  label[for="menu-toggler"]:focus {
+    scale: 1.1;
+  }
+
+  #menu-toggler:checked ~ nav {
+    translate: 0% 0 0;
+  }
+
+  #menu-toggler:checked ~ label svg rect:nth-child(1) {
+    rotate: 45deg;
+  }
+
+  #menu-toggler:checked ~ label svg rect:nth-child(2) {
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #menu-toggler:checked ~ label svg rect:nth-child(3) {
+    rotate: -45deg;
+  }
+
+  @media (max-width: 426px) {
+    nav {
+      width: 100vw;
+    }
+  }
 }
 
-@font-face {
-  font-family: "Golos";
-  font-display: swap;
-  src: url("../fonts/Golos-UI_VariableFont_wght.woff2") format("woff2-variations");
-  font-weight: 100 1000;
-  font-style: normal;
-}
 
 .container {
   margin: auto;
@@ -118,110 +196,6 @@
   pointer-events: all;
 }
 
-#menu__toggle {
-  display: none;
-}
-
-#menu__toggle:checked ~ .navmenu {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-#menu__toggle:checked ~ .burger-btn .burger-btn__rect-top {
-  -webkit-transform: rotate(45deg) translate3d(0, -10%, 0);
-  transform: rotate(45deg) translate3d(0, -10%, 0);
-}
-
-#menu__toggle:checked ~ .burger-btn .burger-btn__rect-center {
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-  height: 0;
-}
-
-#menu__toggle:checked ~ .burger-btn .burger-btn__rect-bottom {
-  -webkit-transform: rotate(-45deg) translate3d(0, 10%, 0);
-  transform: rotate(-45deg) translate3d(0, 10%, 0);
-}
-
-.burger-btn {
-  position: fixed;
-  right: 20px;
-  top: 5%;
-  z-index: 20;
-  cursor: pointer;
-}
-
-.burger-btn rect {
-  fill: #ababab;
-  -webkit-transition: all var(--burgerMenuAnimateTimeout) ease;
-  -o-transition: all var(--burgerMenuAnimateTimeout) ease;
-  transition: all var(--burgerMenuAnimateTimeout) ease;
-  border-radius: 15px;
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
-  transform-origin: left;
-  transform-box: fill-box;
-}
-
-.navmenu {
-  position: fixed;
-  z-index: 2;
-  right: 0;
-  top: 0;
-  background: #874cc3;
-  border-left: 1px solid #441e6c;
-  border-bottom: 1px solid #441e6c;
-  color: #fff;
-  width: 320px;
-  border-bottom-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-  -webkit-transition: all var(--burgerMenuAnimateTimeout) ease;
-  -o-transition: all var(--burgerMenuAnimateTimeout) ease;
-  transition: all var(--burgerMenuAnimateTimeout) ease;
-}
-
-.navmenu__body {
-  padding: 20px;
-  padding-bottom: 40px;
-  margin-top: 10vh;
-  overflow: hidden;
-}
-
-.navmenu__body ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: end;
-  overflow: auto;
-}
-
-.navmenu .fs-element {
-  text-align: right;
-}
-
-.navmenu .fs-element:after {
-  display: block;
-  margin-left: auto;
-  width: 90px;
-  background: #fff;
-  height: 2px;
-  content: "";
-}
-
-.navmenu .fs-element a {
-  padding: 5px 0;
-  color: #fff;
-  word-break: break-word;
-}
 
 body {
   height: 100%;
@@ -910,11 +884,6 @@ body button {
 
   ._block-padding {
     padding: 30px 0;
-  }
-
-  .navmenu {
-    width: 100vw;
-    border-bottom-right-radius: 8px;
   }
 
   .education-card__name {
