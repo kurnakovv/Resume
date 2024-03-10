@@ -44,6 +44,10 @@
         letter-spacing: 5px;
       }
     }
+
+    @media (max-width: 426px) {
+      width: 100vw;
+    }
   }
 
   #menu-toggler {
@@ -102,9 +106,18 @@
 
   section {
     margin: auto;
+    padding: 75px 0;
+
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+
+    &:not(section#hero) > * {
+      max-width: 80%;
+    }
   }
 
-  section:nth-child(1) {
+  section#hero {
     --photoMobHeight: 250px;
 
     display: grid;
@@ -157,8 +170,7 @@
     }
   }
 
-  section:nth-child(2) {
-    padding: 75px 0;
+  section#skills {
     background: -webkit-gradient(linear,
         left top,
         left bottom,
@@ -166,110 +178,40 @@
         to(#7700ff));
     background: -o-linear-gradient(top, #8c31f5, #7700ff);
     background: linear-gradient(180deg, #8c31f5, #7700ff);
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 43px;
   }
 
   section#langs {
     display: grid;
     gap: 30px;
     background: #7700ff;
-    padding: 75px 0;
   }
 
   section#education {
     background: #7700ff;
-    padding: 75px 0;
   }
 
   section#projects {
     background: #3c3c3c;
-    padding: 75px 0;
     overflow: hidden;
   }
 
-  contact-block {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
-    b:after {
-      padding: 0 0.5em;
-      content: "-";
-    }
-  }
-
-  @media (max-width: 426px) {
-    nav {
-      width: 100vw;
-    }
+  section#experience {
+    background: #3c3c3c;
   }
 }
 
-._contain-img img {
+img.contain-img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
   object-fit: contain;
 }
 
-._cover-img img {
+img.cover-img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
-._block-padding {
-  padding: 75px 0;
-}
-
-._title {
-  font-family: "AlumniSans";
-  letter-spacing: 0.1em;
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 36px;
-}
-
-._bold {
-  font-weight: 700;
-}
-
-._title-font {
-  font-family: "AlumniSans";
-}
-
-._bg-first {
-  background: #3c3c3c;
-}
-
-._bg-second_grad {
-  background: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      from(#8c31f5),
-      to(#7700ff));
-  background: -o-linear-gradient(top, #8c31f5, #7700ff);
-  background: linear-gradient(180deg, #8c31f5, #7700ff);
-}
-
-._bg-second {
-  background: #7700ff;
-}
-
-._black {
-  color: #000;
-}
-
-._gray {
-  color: #3c3c3c;
-}
 
 #download-pdf {
   display: flex;
@@ -280,23 +222,13 @@
   border: 1px solid #7700ff;
   transition: all 0.2s ease;
   background: #7700ff;
-}
 
-#download-pdf:hover,
-#download-pdf:focus {
-  color: #7700ff;
-  background: #fff;
+  &:hover,
+  &:focus {
+    color: #7700ff;
+    background: #fff;
+  }
 }
-
-.title-block {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.title-block__image {}
 
 skills-block {
   background: #d9d9d9;
@@ -324,69 +256,56 @@ skills-row {
     border: 1px solid #7d38c2;
     border-radius: 8px;
     color: #000;
-    font-family: "AlumniSans";
+    font-family: var(--alumniSans-font-family);
   }
 }
 
-.work-card {
-  position: relative;
-}
-
-.work-card.active .work-card__body {
-  -webkit-transform: translate3d(10px, -10px, 0);
-  transform: translate3d(10px, -10px, 0);
-}
-
-.work-card__body {
-  position: relative;
-  z-index: 1;
-  background: #2b2b2b;
-  padding: 20px 10px;
-  transition: all 0.3s ease;
-  gap: 20px;
-}
-
-.work-card__header {
+contact-block {
   display: flex;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-.work-card__top-left-container {
-  display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+
+  b:after {
+    padding: 0 0.5em;
+    content: "-";
+  }
 }
 
-.work-card__company-name {
-  font-weight: 500;
-  font-size: 1.6rem;
-}
+work-card {
+  display: block;
+  background: #000;
+  padding: 20px 10px;
 
-.work-card__date-work {
-  font-size: 1.6rem;
-}
+  ::selection {
+    background: white;
+    color: black;
+  }
 
-.work-card__date-work > *:not(:last-child):after {
-  content: " - ";
-}
+  header {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
 
-.work-card__post {
-  font-weight: 600;
-  font-size: 1.6rem;
-}
+    span {
+      font-family: var(--alumniSans-font-family);
+      font-weight: 500;
+      font-size: 1.6rem;
+    }
 
-.work-card__text {
-  line-height: 1.3;
-}
+    h3 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
 
-.work-card__decor-block {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  p {
+    line-height: 1.3;
+
+    @media (min-width: 600px) {
+      width: 70%;
+    }
+  }
 }
 
 education-card {
@@ -421,25 +340,24 @@ education-card {
   }
 }
 
-
 lang-block {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr .4fr auto;
   gap: 15px 50px;
-  justify-content: space-between;
   align-items: center;
   background: #3d0082;
   border-radius: 8px;
   padding: 15px;
 
   span {
-    font-family: "AlumniSans";
+    font-family: var(--alumniSans-font-family);
     font-weight: 700;
     font-size: 3.2rem;
   }
 
   word-separator {
     display: inline-block;
-    width: 100%;
+    width: auto;
     height: 3px;
     background: #fff;
   }
@@ -493,12 +411,6 @@ project-block {
         border-radius: 50%;
       }
     }
-  }
-}
-
-@media (min-width: 600px) {
-  .work-card__text {
-    width: 70%;
   }
 }
 
@@ -594,10 +506,6 @@ project-block {
     display: flex;
     flex-flow: row wrap;
   }
-
-  .work-card__top-left-container {
-    padding-bottom: 10px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -609,7 +517,7 @@ project-block {
     font-size: 1.8rem;
   }
 
-  .work-card.active .work-card__body {
+  work-card.active .work-card__body {
     -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
   }

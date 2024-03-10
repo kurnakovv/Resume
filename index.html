@@ -89,7 +89,7 @@
   </nav>
 
   <main>
-    <section>
+    <section id='hero'>
       <hero-main>
         <h1>
           Maksim Kurnakov, <br />.NET Backend web-developer
@@ -193,65 +193,34 @@
       </skills-block>
     </section>
 
-    <section id="experience"
-             class="experience">
-      <div class="experience__body  container _block-padding _bg-first">
-        <div class="title-block">
-          <div class="title-block__image _contain-img">
-            <img src="images/icons/work.svg"
-                 loading="lazy"
-                 alt="briefcase"
-                 width="50"
-                 height="50" />
-          </div>
-          <h2 class=" _title">Work experience</h2>
-        </div>
-        <div class="work-card work-card_first-item">
-          <div class="work-card__body">
-            <div class="work-card__header">
-              <div class="work-card__top-left-container _title-font">
-                <span class="work-card__company-name">Tiburon research</span>
-                <div class="work-card__date-work">
-                  <span class="work-card__date-work_start">July 2021</span>
-                  <span class="work-card__date-work_end">...</span>
-                </div>
-              </div>
-              <span class="work-card__post _title-font">Junior/Middle+/Senior developer</span>
-            </div>
-            <div class="work-card__main">
-              <p class="work-card__text">
-                The company is developing a second version of the product. I
-                am supporting 2 projects: SPA UI and Business logic/API for
-                working with data <br />Responsibilities: Interface
-                development, adding new functionality, supporting legacy
-                functionality, writing high-load database queries.
-              </p>
-            </div>
-          </div>
-          <div class="work-card__decor-block _bg-second"></div>
-        </div>
-        <!-- <div class="work-card work-card_second-item">
-						<div class="work-card__body">
-							<div class="work-card__header">
-								<div class="work-card__top-left-container _title-font">
-									<span class="work-card__company-name">Company Name</span>
-									<div class="work-card__date-work">
-										<span class="work-card__date-work_start">01.01.2022</span>
-										<span class="work-card__date-work_end">01.01.2033</span>
-									</div>
-								</div>
-								<span class="work-card__post _title-font">Shisher</span>
-							</div>
-							<div class="work-card__main">
-								<p class="work-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Aliquam nunc non id dictumst curabitur. Ullamcorper massa nam tristiqueplatea risus,
-									ac congue. Nibh tempus arcu, sapien, vitae, at tristique. Vivamus tristique
-									scelerisque ullamcorper neque.</p>
-							</div>
-						</div>
-						<div class="work-card__decor-block _bg-second"></div>
-					</div> -->
-      </div>
+    <section id="experience">
+      <hgroup>
+        <img src="images/icons/work.svg"
+             loading="lazy"
+             alt="briefcase"
+             width="50"
+             height="50" />
+
+        <h2>Work experience</h2>
+      </hgroup>
+
+      <work-card>
+        <header>
+          <h3>
+            Tiburon research <span> July 2021 - ... </span>
+          </h3>
+
+          <span>Junior/Middle+/Senior developer</span>
+        </header>
+
+        <p>
+          The company is developing a second version of the product. I
+          am supporting 2 projects: SPA UI and Business logic/API for
+          working with data <br />Responsibilities: Interface
+          development, adding new functionality, supporting legacy
+          functionality, writing high-load database queries.
+        </p>
+      </work-card>
     </section>
 
     <section id="education">
@@ -378,7 +347,7 @@
       </projects-block>
 
       <swipe-note>
-        Swipe to see more
+        <span>Swipe to see more</span>
 
         <img src="images/icons/swipe.svg"
              loading="lazy"
