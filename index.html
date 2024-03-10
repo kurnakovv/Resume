@@ -279,170 +279,113 @@
       </education-card>
     </section>
 
-    <section id="projects"
-             class="projects _bg-first">
-      <div class="projects__body container  _block-padding">
-        <div class="title-block">
-          <div class="title-block__image _contain-img">
-            <img src="images/icons/folder.svg"
-                 loading="lazy"
-                 alt="folder"
-                 width="60"
-                 height="60" />
-          </div>
-          <h2 class=" _title">My pet projects</h2>
-        </div>
-        <div class="projects__items">
-          <div class="project">
-            <div class="project__body _black">
-              <header class="project__header">
-                <a href="https://github.com/KurnakovMaksim/jiraF">
-                  <div class="project__preview _contain-img">
-                    <img src="images/jiraF-icon.png"
-                         loading="lazy"
-                         alt="jiraF"
-                         width="100"
-                         height="100" />
-                  </div>
-                </a>
-                <span class="project__name _title-font _bold _gray">JiraF</span>
-              </header>
-              <div class="project__main">
-                <p class="project__about _black">
-                  jiraF - is a task manager e-commerce application based on
-                  microservices approach.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project__body _black">
-              <header class="project__header">
-                <a href="https://github.com/KurnakovMaksim/EnumConverter">
-                  <div class="project__preview _contain-img">
-                    <img src="images/enumconverter-icon.png"
-                         loading="lazy"
-                         alt="EnumConverter"
-                         width="100"
-                         height="100" />
-                  </div>
-                </a>
-                <span class="project__name _title-font _bold _gray">Enum Converter</span>
-              </header>
-              <div class="project__main">
-                <p class="project__about _black">
-                  EnumConverter is a little open source library for convert
-                  enum.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project__body _black">
-              <header class="project__header">
-                <a href="https://github.com/KurnakovMaksim/ExceptionExtensions">
-                  <div class="project__preview _contain-img">
-                    <img src="images/exceptionextensions-icon.png"
-                         loading="lazy"
-                         alt="ExceptionExtensions"
-                         width="100"
-                         height="100" />
-                  </div>
-                </a>
-                <span class="project__name _title-font _bold _gray">Exception Extensions</span>
-              </header>
-              <div class="project__main">
-                <p class="project__about _black">
-                  ExceptionExtensions is open source library with useful
-                  methods for working with exceptions.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project__body _black">
-              <header class="project__header">
-                <a href="https://github.com/KurnakovMaksim/NotSocialNetwork_Blazor">
-                  <div class="project__preview _contain-img">
-                    <img src="images/NotSocialNetwork-icon.png"
-                         loading="lazy"
-                         alt="NotSocialNetwork"
-                         width="100"
-                         height="100" />
-                  </div>
-                </a>
-                <span class="project__name _title-font _bold _gray">Not Social Network</span>
-              </header>
-              <div class="project__main">
-                <p class="project__about _black">
-                  NotSocialNetwork - This is the place where people can
-                  publish their interesting posts.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="project">
-            <div class="project__body _black">
-              <header class="project__header">
-                <a href="https://github.com/KurnakovMaksim/DeviceStore-AspNetMvc-">
-                  <div class="project__preview _contain-img">
-                    <img src="https://raw.githubusercontent.com/KurnakovMaksim/DeviceStore-AspNetMvc-/master/DeviceStore.WebUI/favicon.ico"
-                         loading="lazy"
-                         alt="DeviceStore"
-                         width="100"
-                         height="100" />
-                  </div>
-                </a>
-                <span class="project__name _title-font _bold _gray">Device Store</span>
-              </header>
-              <div class="project__main">
-                <p class="project__about _black">
-                  DeviceStore is an online store for selling various
-                  devices.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="project">
-							<div class="project__body _black">
-								<header class="project__header">
-									<div class="project__preview _contain-img">
-										<img src="images/icons/folder.svg" loading='lazy' alt='projectName' width=100
-											height=100>
-									</div>
-									<span class="project__name _title-font _bold _gray">ProjectX</span>
-								</header>
-								<div class="project__main">
-									<p class="project__about _black">Lorem ipsum dolor sit amet, consectetur adipiscing
-										elit.</p>
-								</div>
-							</div>
-						</div>
-						<div class="project">
-							<div class="project__body _black">
-								<header class="project__header">
-									<div class="project__preview _contain-img">
-										<img src="images/icons/folder.svg" loading='lazy' alt='projectName' width=100
-											height=100>
-									</div>
-									<span class="project__name _title-font _bold _gray">ProjectX</span>
-								</header>
-								<div class="project__main">
-									<p class="project__about _black">Lorem ipsum dolor sit amet, consectetur adipiscing
-										elit.</p>
-								</div>
-							</div>
-						</div> -->
-        </div>
-        <div class="projects__swipe-note">
-          Swipe to see more
-          <img src="images/icons/swipe.svg"
-               loading="lazy"
-               width="25"
-               height="25"
-               alt="swipe icon" />
-        </div>
-      </div>
+    <section id="projects">
+      <hgroup>
+        <img src="images/icons/folder.svg"
+             loading="lazy"
+             alt="folder"
+             width="60"
+             height="60" />
+
+        <h2>My pet projects</h2>
+      </hgroup>
+
+      <projects-block>
+        <project-block>
+          <header>
+            <a href="https://github.com/KurnakovMaksim/jiraF">
+              <img src="images/jiraF-icon.png"
+                   loading="lazy"
+                   alt="jiraF" />
+            </a>
+
+            <span>JiraF</span>
+          </header>
+
+          <p>
+            jiraF - is a task manager e-commerce application based on
+            microservices approach.
+          </p>
+        </project-block>
+
+        <project-block>
+          <header>
+            <a href=https://github.com/KurnakovMaksim/EnumConverter">
+              <img src="images/enumconverter-icon.png"
+                   loading="lazy"
+                   alt="EnumConverter" />
+            </a>
+
+            <span>Enum Converter</span>
+          </header>
+
+          <p>
+            EnumConverter is a little open source library for convert
+            enum.
+          </p>
+        </project-block>
+
+        <project-block>
+          <header>
+            <a href="https://github.com/KurnakovMaksim/ExceptionExtensions">
+              <img src="images/exceptionextensions-icon.png"
+                   loading="lazy"
+                   alt="ExceptionExtensions" />
+            </a>
+
+            <span>Exception Extensions</span>
+          </header>
+
+          <p>
+            ExceptionExtensions is open source library with useful
+            methods for working with exceptions.
+          </p>
+        </project-block>
+
+        <project-block>
+          <header>
+            <a href="https://github.com/KurnakovMaksim/NotSocialNetwork_Blazor">
+              <img src="images/NotSocialNetwork-icon.png"
+                   loading="lazy"
+                   alt="NotSocialNetwork" />
+            </a>
+
+            <span>Not Social Network</span>
+          </header>
+
+          <p>
+            NotSocialNetwork - This is the place where people can
+            publish their interesting posts.
+          </p>
+        </project-block>
+
+        <project-block>
+          <header>
+            <a href="https://github.com/KurnakovMaksim/DeviceStore-AspNetMvc-">
+              <img src="https://raw.githubusercontent.com/KurnakovMaksim/DeviceStore-AspNetMvc-/master/DeviceStore.WebUI/favicon.ico"
+                   loading="lazy"
+                   alt="DeviceStore" />
+            </a>
+
+            <span>Device Store</span>
+          </header>
+
+          <p>
+            DeviceStore is an online store for selling various
+            devices.
+          </p>
+        </project-block>
+      </projects-block>
+
+      <swipe-note>
+        Swipe to see more
+
+        <img src="images/icons/swipe.svg"
+             loading="lazy"
+             width="25"
+             height="25"
+             alt="swipe icon" />
+      </swipe-note>
     </section>
 
     <section id="langs">

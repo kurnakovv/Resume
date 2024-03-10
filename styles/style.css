@@ -186,6 +186,12 @@
     padding: 75px 0;
   }
 
+  section#projects {
+    background: #3c3c3c;
+    padding: 75px 0;
+    overflow: hidden;
+  }
+
   contact-block {
     display: flex;
     flex-flow: row nowrap;
@@ -439,31 +445,24 @@ lang-block {
   }
 }
 
-.projects__body {
-  overflow: hidden;
-}
-
-.projects__items {
+projects-block {
   display: grid;
   grid-template: "project project project" 1fr/1fr 1fr 1fr;
   gap: 50px;
 }
 
-.projects__swipe-note {
+swipe-note {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
 }
 
-.projects__swipe-note img {
-  margin-left: 10px;
-}
-
-.project {
-  width: 330px;
-}
-
-.project__body {
+project-block {
   display: grid;
   background: #f1f1f1;
   width: 100%;
@@ -472,40 +471,34 @@ lang-block {
   border-radius: 8px;
   text-align: center;
   gap: 15px;
-}
+  width: 300px;
+  color: #000;
 
-.project__header {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  gap: 20px;
-}
+  header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
 
-.project__preview {
-  width: 100px;
-  height: 100px;
-  background: #000;
-  border-radius: 50%;
-}
+    span {
+      font-family: var(--alumniSans-font-family);
+      font-weight: 700;
+      color: #3c3c3c;
+      font-size: 3.2rem;
+    }
 
-.project__preview img {
-  border-radius: 50%;
-}
-
-.project__name {
-  font-size: 3.2rem;
-  word-break: break-word;
+    a {
+      img {
+        height: 100px;
+        border-radius: 50%;
+      }
+    }
+  }
 }
 
 @media (min-width: 600px) {
   .work-card__text {
     width: 70%;
-  }
-}
-
-@media (min-width: 700px) {
-  .projects__swipe-note {
-    display: none;
   }
 }
 
@@ -516,7 +509,7 @@ lang-block {
 }
 
 @media (max-width: 1300px) {
-  .projects__items {
+  projects-block {
     grid-template: "project project" 1fr/1fr 1fr;
   }
 
@@ -540,12 +533,8 @@ lang-block {
     gap: 32px 50px;
   }
 
-  .projects__items {
+  projects-block {
     gap: 30px;
-  }
-
-  .project {
-    width: 300px;
   }
 }
 
@@ -580,7 +569,7 @@ lang-block {
     width: 100%;
   }
 
-  .projects__items {
+  projects-block {
     display: flex;
     flex-flow: row nowrap;
     gap: 0;
@@ -591,7 +580,7 @@ lang-block {
     gap: 20px;
   }
 
-  .projects__items ::-webkit-scrollbar {
+  projects-block ::-webkit-scrollbar {
     width: 10px;
   }
 
