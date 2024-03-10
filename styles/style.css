@@ -181,6 +181,11 @@
     padding: 75px 0;
   }
 
+  section#education {
+    background: #7700ff;
+    padding: 75px 0;
+  }
+
   contact-block {
     display: flex;
     flex-flow: row nowrap;
@@ -378,46 +383,38 @@ skills-row {
   height: 100%;
 }
 
-.education-card {
+education-card {
+  display: grid;
   text-align: center;
   width: 50%;
   border-radius: 8px;
-}
 
-.education-card.white {
+  padding: 20px;
+  gap: 10px;
   background: #fff;
   border: 2px solid #000;
   color: #000;
+
+  header {
+    span {
+      font-family: var(--alumniSans-font-family);
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  strong {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
 }
 
-.education-card.purple {
-  background: #3d0082;
-}
-
-.education-card.black {
-  background: #3c3c3c;
-}
-
-.education-card__body {
-  display: grid;
-  padding: 20px;
-  gap: 10px;
-}
-
-.education-card__name {
-  font-weight: 700;
-  font-size: 3.2rem;
-}
-
-.education-card__stud-date {
-  font-size: 0.8rem;
-}
-
-.education-card__post {
-  padding-top: 20px;
-  font-weight: 700;
-  font-size: 1.6rem;
-}
 
 lang-block {
   display: flex;
