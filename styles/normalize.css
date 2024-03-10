@@ -258,9 +258,9 @@ thirdLevel;
 
   button[type='submit'] {}
 
-  h1 {
-    font-size: 2.4rem;
-
+  h1,
+  h2,
+  h3 {
     font-family: "AlumniSans";
     letter-spacing: 0.1em;
     font-weight: 600;
@@ -268,11 +268,22 @@ thirdLevel;
     font-size: 36px;
   }
 
+  h1 {
+    font-size: 2.4rem;
+  }
+
   h2 {}
 
   h3 {}
 
   h4 {}
+
+  hgroup {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+  }
 
   p {}
 

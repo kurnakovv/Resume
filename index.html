@@ -138,64 +138,61 @@
       </hero-contacts>
     </section>
 
-    <section id="skills"
-             class="skills _bg-second_grad _block-padding">
-      <div class="skills__body _body-column-center container">
-        <div class="title-block">
-          <div class="title-block__image _contain-img">
-            <img src="./images/icons/PC.svg"
-                 loading="lazy"
-                 alt="PC"
-                 width="50"
-                 height="50" />
-          </div>
-          <h2 class="title-block__name _title">Skills</h2>
-        </div>
-        <div class="skills__skills-block skills-block">
-          <h3 class="skills-block__title _title _gray">Back-end</h3>
-          <div class="skills-block__skill-rows">
-            <div class="skill _title-font _black">C#</div>
-            <div class="skill _title-font _black">.NET</div>
-            <div class="skill _title-font _black">.NET Framework</div>
-            <div class="skill _title-font _black">.NET Core</div>
-            <div class="skill _title-font _black">xUnit</div>
-            <div class="skill _title-font _black">MSTest</div>
-            <div class="skill _title-font _black">SQL</div>
-            <div class="skill _title-font _black">T-SQL</div>
-            <div class="skill _title-font _black">Postgres SQL</div>
-            <div class="skill _title-font _black">Microsoft SQL Server</div>
-            <div class="skill _title-font _black">Web API</div>
-            <div class="skill _title-font _black">gRPC</div>
-            <div class="skill _title-font _black">Asp net</div>
-            <div class="skill _title-font _black">Asp net Core</div>
-            <div class="skill _title-font _black">Swagger</div>
-            <div class="skill _title-font _black">Microservices</div>
-            <div class="skill _title-font _black">Docker</div>
-          </div>
-        </div>
-        <div class="skills__skills-block skills-block">
-          <h3 class="skills-block__title _title _gray">Front-end</h3>
-          <div class="skills-block__skill-rows">
-            <div class="skill _title-font _black">Html</div>
-            <div class="skill _title-font _black">Css</div>
-            <div class="skill _title-font _black">JavaScript (JS)</div>
-            <div class="skill _title-font _black">TypeScript (TS)</div>
-            <div class="skill _title-font _black">React</div>
-            <div class="skill _title-font _black">Blazor</div>
-          </div>
-        </div>
-        <div class="skills__skills-block skills-block">
-          <h3 class="skills-block__title _title _gray">Shared</h3>
-          <div class="skills-block__skill-rows">
-            <div class="skill _title-font _black">Git</div>
-            <div class="skill _title-font _black">TDD</div>
-            <div class="skill _title-font _black">SOLID</div>
-            <div class="skill _title-font _black">OOP knowledge</div>
-            <div class="skill _title-font _black">Patterns (GoF)</div>
-          </div>
-        </div>
-      </div>
+    <section id="skills">
+      <hgroup>
+        <img src="./images/icons/PC.svg"
+             loading="lazy"
+             alt="PC"
+             width="50"
+             height="50" />
+        <h2>Skills</h2>
+      </hgroup>
+
+      <skills-block>
+        <h3>Back-end</h3>
+
+        <skills-row>
+          <span>C#</span>
+          <span>.NET / .NET Framework / .NET Core</span>
+          <span>xUnit</span>
+          <span>MSTest</span>
+          <span>SQL / T-SQL</span>
+          <span>Microsoft SQL Server / Postgres SQL</span>
+          <span>Web API</span>
+          <span>gRPC</span>
+          <span>Asp net / Asp net Core</span>
+          <span>Swagger</span>
+          <span>Microservices</span>
+          <span>Docker</span>
+        </skills-row>
+      </skills-block>
+
+      <skills-block>
+        <h3>Front-end</h3>
+
+        <skills-row>
+          <span>Html</span>
+          <span>Css</span>
+          <span>JavaScript (JS)</span>
+          <span>TypeScript (TS)</span>
+          <span>React</span>
+          <span>Blazor</span>
+        </skills-row>
+      </skills-block>
+
+      <skills-block>
+        <h3>Shared</h3>
+
+        <skills-row>
+          <span>Git</span>
+          <span>TDD</span>
+          <span>SOLID</span>
+          <span>OOP knowledge</span>
+          <span>Patterns (GoF)</span>
+        </skills-row>
+      </skills-block>
     </section>
+
     <section id="experience"
              class="experience">
       <div class="experience__body _body-column-center container _block-padding _bg-first">
@@ -207,7 +204,7 @@
                  width="50"
                  height="50" />
           </div>
-          <h2 class="title-block__name _title">Work experience</h2>
+          <h2 class=" _title">Work experience</h2>
         </div>
         <div class="work-card work-card_first-item">
           <div class="work-card__body">
@@ -256,6 +253,7 @@
 					</div> -->
       </div>
     </section>
+
     <section id="education"
              class="education _bg-second">
       <div class="education__body container _body-column-center _block-padding">
@@ -267,7 +265,7 @@
                  width="50"
                  height="50" />
           </div>
-          <h2 class="title-block__name _title">Education</h2>
+          <h2 class=" _title">Education</h2>
         </div>
         <div class="education-card white">
           <div class="education-card__body">
@@ -293,6 +291,7 @@
 					</div> -->
       </div>
     </section>
+
     <section id="projects"
              class="projects _bg-first">
       <div class="projects__body container _body-column-center _block-padding">
@@ -304,7 +303,7 @@
                  width="60"
                  height="60" />
           </div>
-          <h2 class="title-block__name _title">My pet projects</h2>
+          <h2 class=" _title">My pet projects</h2>
         </div>
         <div class="projects__items">
           <div class="project">
@@ -458,6 +457,7 @@
         </div>
       </div>
     </section>
+
     <section id="langs"
              class="langs _bg-second">
       <div class="langs__body container _body-column-center _block-padding">
@@ -469,7 +469,7 @@
                  width="50"
                  height="50" />
           </div>
-          <h2 class="title-block__name _title">Languages</h2>
+          <h2 class=" _title">Languages</h2>
         </div>
         <div class="langs__lang lang">
           <span class="lang__name _title-font _bold">Russian</span>
