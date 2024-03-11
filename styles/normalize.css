@@ -4,7 +4,7 @@ secondLevel,
 thirdLevel;
 
 @layer normalizing {
-  *:not(table, caption, thead, tbody, tfoot, colgroup, tr, th, td, svg *) {
+  *:not(img, table, caption, thead, tbody, tfoot, colgroup, tr, th, td, svg *) {
     all: unset;
     box-sizing: border-box
   }
@@ -129,7 +129,7 @@ thirdLevel;
 
   body {
     height: 100%;
-    color: var(--text-c);
+    color: #fff;
     font: calc((100vw - 20rem) / (72 - 20) * (1 - 0.8) + 0.8rem) var(--main-font-family);
   }
 
@@ -270,6 +270,7 @@ thirdLevel;
 
   h1 {
     font-size: 2.4rem;
+    line-height: 1.2;
   }
 
   h2 {}
