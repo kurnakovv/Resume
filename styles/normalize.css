@@ -317,4 +317,8 @@ thirdLevel;
   b {
     font-weight: 500;
   }
+
+  ol li {
+    list-style: decimal inside;
+  }
 }
