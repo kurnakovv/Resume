@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "AlumniSans";
+  font-display: swap;
+  src: url("../fonts/AlumniSans-VariableFont_wght.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Golos";
+  font-display: swap;
+  src: url("../fonts/Golos-UI_VariableFont_wght.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+  font-style: normal;
+}

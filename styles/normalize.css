@@ -1,0 +1,324 @@
+@layer normalizing,
+firstLevel,
+secondLevel,
+thirdLevel;
+
+@layer normalizing {
+  *:not(img, table, caption, thead, tbody, tfoot, colgroup, tr, th, td, svg *) {
+    all: unset;
+    box-sizing: border-box
+  }
+
+  head,
+  script {
+    display: none
+  }
+
+  ::before,
+  ::after {
+    box-sizing: border-box
+  }
+
+  :active {
+    outline: none
+  }
+
+  :focus-visible {
+    outline: 2px solid black
+  }
+
+  nav,
+  footer,
+  header,
+  aside,
+  body,
+  div,
+  main,
+  section,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  p,
+  pre,
+  ul {
+    display: block
+  }
+
+  html,
+  body {
+    line-height: 1;
+    -webkit-text-size-adjust: auto;
+    -moz-text-size-adjust: auto;
+    text-size-adjust: auto;
+    -webkit-tap-highlight-color: #0000
+  }
+
+  html ::-moz-selection {
+    background: black;
+    color: white;
+  }
+
+  html ::selection {
+    background: black;
+    color: white;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth
+    }
+  }
+
+  a,
+  button {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  a,
+  p,
+  span,
+  mark,
+  abbr,
+  q,
+  blockquote,
+  cite,
+  strong,
+  small {
+    text-wrap: pretty;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone
+  }
+
+  a {
+    display: inline-block
+  }
+
+  a:hover,
+  a:visited {
+    text-decoration: none
+  }
+
+  ul,
+  li {
+    list-style: none
+  }
+
+  img {
+    shape-margin: 0.75em;
+    max-width: 100%;
+    font-style: italic;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  caption {
+    text-wrap: balance
+  }
+
+  body {
+    height: 100%;
+    color: #fff;
+    font: calc((100vw - 20rem) / (72 - 20) * (1 - 0.8) + 0.8rem) var(--main-font-family);
+  }
+
+  table-wrapper {
+    overflow-x: auto;
+    display: block;
+    max-width: 100%
+  }
+
+  table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 700px
+  }
+
+  table caption {
+    background: inherit
+  }
+
+  table thead {}
+
+  table tbody {}
+
+  table tfoot {}
+
+  table tr th,
+  table tr td {}
+
+  table tr th {}
+
+  table tr td {}
+
+  form fieldset legend {}
+
+  form label {
+    cursor: pointer
+  }
+
+  form input {
+    width: -moz-fit-content;
+    width: fit-content
+  }
+
+  form input::-moz-placeholder {}
+
+  form input::placeholder {}
+
+  form input:disabled {}
+
+  form input:invalid {}
+
+  form input:focus-visible {
+    outline: none
+  }
+
+  form input[type='password'] {
+    --caption-font: 'caption';
+    font-family: var(--caption-font)
+  }
+
+  form input[type='text']::-moz-placeholder {}
+
+  form input[type='text']::placeholder {}
+
+  form input[type='email']::-moz-placeholder {}
+
+  form input[type='email']::placeholder {}
+
+  form input[type='tel']::-moz-placeholder {}
+
+  form input[type='tel']::placeholder {}
+
+  form input[type='number'] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield
+  }
+
+  form input[type='number']::-webkit-inner-spin-button,
+  form input[type='number']::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+    appearance: none
+  }
+
+  form input[type='radio'],
+  form input[type='checkbox'],
+  form input[type='file'] {
+    display: none
+  }
+
+  form input[type='radio'] + label svg,
+  form input[type='checkbox'] + label svg,
+  form input[type='file'] + label svg {}
+
+  form input[type='radio']:checked + label svg,
+  form input[type='checkbox']:checked + label svg,
+  form input[type='file']:checked + label svg {}
+
+  form input[type='checkbox'] {}
+
+  form input[type='radio'] {}
+
+  form input[type='file'] {}
+
+  select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff
+  }
+
+  select:focus-visible {
+    outline: none
+  }
+
+  textarea::-moz-placeholder {}
+
+  textarea::placeholder {}
+
+  textarea:focus-visible {
+    outline: none
+  }
+
+  button[type='submit'] {}
+
+  h1,
+  h2,
+  h3 {
+    font-family: "AlumniSans";
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 36px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+
+  h2 {}
+
+  h3 {
+    * {
+      letter-spacing: unset;
+    }
+  }
+
+  h4 {}
+
+  hgroup {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  p {}
+
+  address {}
+
+  blockquote {}
+
+  q {}
+
+  cite {}
+
+  mark {}
+
+  s {}
+
+  figure figcaption {}
+
+  hr {}
+
+  inline-container {
+    container-type: inline-size;
+    display: block
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  ol li {
+    list-style: decimal inside;
+  }
+}
