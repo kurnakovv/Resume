@@ -332,20 +332,31 @@ contact-block b::after {
 }
 
 work-card {
+  position: relative;
+  z-index: 1;
+}
+
+work-card ::selection {
+  color: black;
+  background: white
+}
+
+work-content {
   display: grid;
   gap: 20px;
   padding: 20px 10px;
-  background: #000
+  background: #000;
 }
 
-work-card ::selection {
-  color: black;
-  background: white
-}
-
-work-card ::selection {
-  color: black;
-  background: white
+work-card::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #70f;
 }
 
 work-card header {
@@ -557,5 +568,66 @@ project-block header img {
   height: 100%;
   max-height: 200px;
   object-fit: contain;
-  object-fit: contain
+}
+
+@keyframes to-left-op02_1 {
+  from {
+    translate: 50px 0;
+    opacity: 0.3;
+  }
+
+  to {
+    translate: 0px 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes to-top-op02_1 {
+  from {
+    translate: 0 50px;
+    opacity: 0.3;
+  }
+
+  to {
+    translate: 0 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes work-card-animation {
+  25% {
+    left: -1em;
+    bottom: -1em;
+  }
+
+  75% {
+    left: -1em;
+    bottom: -1em;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #skills hgroup {
+    animation: to-top-op02_1 linear forwards;
+    animation-range: cover 0% 30%;
+    animation-timeline: view(y);
+  }
+
+  #skills skills-block {
+    animation: to-top-op02_1 linear forwards;
+    animation-range: cover 0% 35%;
+    animation-timeline: view(y);
+  }
+
+  #experience hgroup {
+    animation: to-left-op02_1 linear forwards;
+    animation-range: cover 0% 30%;
+    animation-timeline: view(y);
+  }
+
+  #experience work-card::before {
+    animation: work-card-animation linear forwards;
+    animation-range: cover 20% cover 70%;
+    animation-timeline: view(y);
+  }
 }
